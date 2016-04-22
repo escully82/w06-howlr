@@ -8,7 +8,7 @@ end
 # New
 
 get '/wolves/new' do
-  @wolves = Wolf.new
+  @wolf = Wolf.new
   erb :"wolves/new"
 end
 

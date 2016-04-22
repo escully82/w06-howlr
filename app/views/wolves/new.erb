@@ -1,0 +1,37 @@
+<h2>Join Howlr</h2>
+
+<% if @wolf.errors.any? %>
+  <% @wolf.errors.full_message.each do |m| %>
+    <p>Error: <%= m %></p>
+  <% end %>
+<% end %>
+
+<form action="/wolves" method="post">
+
+  <div>
+    Name:
+    <input type="text" name="name" value="<%= @wolf.name %>">
+  </div>
+
+  <div>
+    Bio:
+    <input type="text" name="description" value="<%= @wolf.description %>">
+  </div>
+
+  <div>
+    Add Picture:
+    <input type="text" name="link" value="<%= @wolf.link %>">
+  </div>
+
+  <div>
+    <input type="submit" value="Join">
+  </div>
+
+</form>
+
+
+<p><a href="/">Main Menu</a></p>
+
+<p><a href="/wolves/new">Join Pack</a></p>
+
+<p><a href="/wolves">Return to the Pack</a></p>

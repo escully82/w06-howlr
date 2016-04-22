@@ -1,0 +1,15 @@
+<h2>Wolves</h2>
+
+<ul>
+  <% @wolves.each do |w| %>
+    <li>
+      <a href="/wolves/<%= w.id %>"><%= w.name %></a>
+    </li>
+  <% end %>
+</ul>
+
+<p><a href="/">Main Menu</a></p>
+
+<p><a href="/artists/new">Join</a></p>
+
+<p><a href="/artists">See the Pack</a></p>
