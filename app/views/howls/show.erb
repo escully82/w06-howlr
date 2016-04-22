@@ -1,0 +1,10 @@
+  <h2>Update <%= @howl.howl_content %></h2>
+
+
+<p>Name:  <%= @howl.howl_content %></p>
+<p>Link:  <%= @howl.link         %></p>
+<p>Likes: <%= @howl.likes        %></p>
+<p>Wolf: <%= @howl.wolf.name if @howl.wolf %> </p>
+<p><a href="/howls/<%= @howl.id %>/edit">Update Howls</a></p>
+
+<p><a href="/howls">Return to Howls</a></p>

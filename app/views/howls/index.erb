@@ -1,0 +1,14 @@
+<h2>All Howls</h2>
+
+<ul>
+  <% @howls.each do |w| %>
+    <li>
+      <a href="/howls/<%= w.id %>"><%= w.howl_content %></a>:</br>
+      <a href="/howls/<%= w.id %>"><%= w.link %></a>
+    </li>
+  <% end %>
+</ul>
+
+<p><a href="/">Main Menu</a></p>
+
+<p><a href="/howls/new">New Howl</a></p>

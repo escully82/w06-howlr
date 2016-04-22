@@ -1,0 +1,45 @@
+<h2>Edit <%= @howl.new %></h2>
+
+<form action="/howls/<%= @howl.id %>" method="post">
+
+  <div>
+    Name:
+    <input type="text" name="name" method="post">
+  </div>
+
+  <div>
+    Howl:
+    <input type="text" name="howl_content" method="post">
+  </div>
+
+  <div>
+    Wolf:
+    <select name="wolf_id">
+      <% @wolves.each do |w| %>
+        <option value="<%= w.id %>" <%= w.id == @howl.wolf_id ? "selected" : ""%> ><%= w.name %>
+        </option>
+      <% end %>
+    </select>
+  </div>
+
+  <div>
+    <input type="submit" value="Update Howl">
+  </div>
+</form>
+
+<form action="/howls/<%= @howl.id %>" method="post">
+  <div>
+    <input type="hidden" name="_method" value="post">
+    <input type="submit" value="Remove Art Piece">
+  </div>
+</form>
+
+<p><a href="/">Main Menu</a></p>
+
+<p><a href="/howls/new">Join the Pack!</a></p>
+
+<p><a href="/howls/<%= @howl.id %>/edit">
+    Update
+</a></p>
+
+<p><a href="/howls">Return to Howls</a></p>

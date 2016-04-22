@@ -1,0 +1,39 @@
+<h2>Howls</h2>
+
+<% if @howl.errors.any? %>
+  <% @howl.errors.full_messages.each do |m| %>
+    <p>Error: <%= m %></p>
+  <% end %>
+<% end %>
+
+<form acton="/howls" method="post">
+  <div>
+    Howl:
+    <input type="text" name="howl" value="<% @howl.howl_content %>">
+  </div>
+
+  <div>
+    Link:
+    <input type="text" name="link" value="<% @howl.link %>">
+  </div>
+
+  <div>
+    Wolf:
+    <input name="wolf_id">
+      <% @wolves.each do |w| %>
+        <option value="<%= w.id %>" <%= w.id == @howl.wolf_id ?
+        "selected" : ""%> ><%= w.name %>
+        </option>
+      <% end %>
+    </select>
+  </div>
+
+  <div>
+    <input type="submit" value="Add Wolf">
+  </div>
+
+</form>
+
+<p><a href="/">Main Menu</a></p>
+
+<p><a href="/howls">Return to Howls</a></p>
