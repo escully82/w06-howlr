@@ -1,16 +1,80 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Howlr</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!doctype html>
+<html lang="en">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div class="container">
-      <%= yield %>
+<head>
+
+  <link
+  href='https://fonts.googleapis.com/css?family=Ek+Mukta:400,200,300,800' rel='stylesheet' type='text/css'>
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,900italic' rel='stylesheet' type='text/css'>
+
+  <meta charset="UTF-8" />
+
+  <title>Howlr</title>
+
+  <!--css links -->
+  <link rel="stylesheet" href="master.css"/>
+
+  <!-- Script links -->
+
+  <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+    <script type="text/javascript" src="http://static.tumblr.com/3ikgvxs/0TGl4zgpu/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $(".links_body").hide();
+    $(".links_head").click(function(){
+    $(this).next(".links_body").slideToggle('fast');
+    }); }); </script>
+    <style type="text/css">
+    .links_list { margin:0px; padding:0px; width:180px;}
+    .links_head { padding-top:5px; padding-bottom:5px; cursor:pointer; position:relative; margin:1px; text-align:center;}
+    .links_body { padding:10px; text-align:left; color: #fff; display:none;}
+    </style>
+
+</head>
+
+
+
+<body>
+
+  <div id="pagewrapper">
+
+    <!-- begin header -->
+
+    <div id="header_box">
+    	<header class="clearfix margin_bottom_2 padding_bottom_2">
+        <div class="grid_100">
+          <a class="sign_in_button" href="">Sign In</a>
+        </div>
+    		<div id="nav_box">
+    			<nav class="clearfix left">
+            <ul>
+              <li><a href="#">Howlr</a></li>
+              <li><a href="#">Post</a></li>
+              <li><a href="img">Logo</a></li>
+              <li><a href="#">Run Wild</a></li>
+              <li><a href="#">Pick a Pack</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     </div>
-  </body>
+
+
+
+
+
+
+  <%= yield %>
+
+
+
+
+
+</div>
+
+</body>
 </html>

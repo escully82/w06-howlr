@@ -1,0 +1,103 @@
+form li{
+  color:#ffffff;
+  display:block;
+  margin-bottom:2%;
+}
+
+input, label, textarea{
+  color:#ffffff;
+  width:45%;
+  padding:10px;
+  font-size:1.1em;
+}
+/*
+input, textarea{
+	font-family: 'Lato', sans-serif;
+	font-weight:100;
+  color:#ffffff;
+  border-radius:5px;
+  background:#ffffff;
+  border:2px #91908f ;
+}
+
+*/
+
+textarea, output {
+  color:#33c5f4;
+}
+
+textarea, input {
+	font-family: 'Lato', sans-serif;
+	font-weight:100;
+  color:#91908f;
+  border-radius:5px;
+  background:#ffffff;
+  border:2px #91908f ;
+  outline: none;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+label.error{color:black;}/*color of error text*/
+input.error, textarea.error{background:#ffffff;}/*color of error highlight*/
+
+input:focus, textarea:focus{
+  background:#ffffff;
+  color:#33c5f4;
+  font-weight:300;
+}
+
+/* do not delete rule */
+.extra_field{
+ display:none;/* hides robot test field */
+}
+/* do not delete rule */
+
+
+#confirm_flash{
+  background:#e0e0e0;
+}
+
+#error_flash{
+  background: #f51919;
+}
+#submit{
+
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:25%;
+  background: #ffffff;
+  -webkit-appearance:none;
+}
+
+
+#confirm_flash, #error_flash{
+  position:fixed;
+  width:100%;
+  padding:20px;
+  color:#fff;
+  font-size:1.5em;
+  text-align:center;
+  visibility: hidden;
+  opacity:0;
+  z-index:999;
+  -webkit-transition:visibility 0s 2s, opacity 1s;
+  transition:visibility 0s 2s, opacity 1s;
+
+}
+
+#confirm_flash.flash,#error_flash.flash{
+	visibility: visible;
+	opacity:1;
+	-webkit-transition:.5s;
+	transition:.5s;
+}

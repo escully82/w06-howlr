@@ -1,0 +1,14 @@
+/* removing native styling from links */
+
+a{
+  text-decoration:none;
+}
+
+/* definingj h tags */
+
+h1 {
+  background: none;
+  color: #a5a3a3;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}

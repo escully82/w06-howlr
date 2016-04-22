@@ -1,0 +1,174 @@
+#pagewrapper {
+  width:100%
+}
+
+#nav_box{
+	margin-top:5%;
+	width:100%;
+	height:auto;
+  clear:both;
+  float:left;
+}
+
+#logo {
+	width:30%;
+	height:30%;
+	margin:auto;
+	background:none;
+}
+
+/* straatmann rules */
+
+#opener {
+	display:none;
+}
+
+#second_logo {
+  margin:auto auto 5% auto;
+	display:none;
+}
+
+.sign_in_button {
+  float:right;
+  margin:2% 3% 0 0;
+}
+
+nav{
+	text-align:center;
+}
+
+nav {
+	width:100%;
+	text-align:right;
+}
+
+nav li{
+	display:inline-block;
+	text-align:right;
+  border-right: 1px solid #bbb;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav a:link, a:visited{
+	text-align:right;
+	text-decoration:none;
+  margin:0 30px;
+	background: none;
+	color: #2E2E2E;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+nav a:hover:not(.active) {
+	background:none;
+	color: #f7f8f8;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+nav a:active {
+  color: #a5a3a3;
+}
+
+nav #logo{
+
+}
+
+/* yes he does */
+
+@media screen and (max-width:800px){
+	#logo{display:none;}
+	#second_logo{display:block;}
+}
+
+@media screen and (max-width:550px) {
+	nav.stra_nav li:not(#logo){
+		display:block;
+		width:100%;
+		clear:both;
+	}
+
+  nav ul li{
+    padding-bottom:2%;
+    text-align:center;
+  }
+
+}
+
+
+
+
+
+
+/*
+nav {
+	text-align:center;
+	margin:auto;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+nav li {
+	text-align:center;
+	margin:auto;
+	display:inline;
+}
+
+nav a:link, nav a:visited {
+	text-decoration:none;
+	padding:0 30px;
+	background: none;
+	color: #a5a3a3;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+/*
+nav a:visited {
+	color: #2bafe4;
+	background:#a5a3a3;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+
+nav a:hover {
+	background:none;
+	color: #2bafe4;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+	#menu {
+		margin:auto;
+		clear:both;
+		width:30px;
+		height:30px;
+		border-radius:50%;
+		background: #2bafe4;
+	}
+
+*/
+
+/*
+#logo_2 {
+	width:60%;
+	height:60%;
+}
+*/
+
+/*
+
+#logo a {
+	margin: 0;
+	padding: 0;
+}
+
+.space{
+	margin-bottom:2%;
+}
+
+*/
